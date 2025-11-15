@@ -1,14 +1,14 @@
 import React from "react";
 import DataTable from "../components/DataTable";
 import { machineData } from "../data/machineData";
-import logo from "../assets/logo.svg";
+import Logo from "../assets/logo.svg";
 
 const Dashboard = () => {
   return (
     <div className="bg-[#0f1c2e] min-h-screen">
       <div className="">
         <header className="p-4 flex justify-center">
-          <img src={logo} alt="Logo" className="w-24 h-auto" />
+          <img src={Logo} alt="Logo" className="w-24 h-auto" />
         </header>
         <div className="bg-[#1F2B3E]/50 w-full py-2 px-8 border border-[#2A3A4E] rounded-b-lg">
           <h2 className="text-white font-semibold">Dashboard</h2>

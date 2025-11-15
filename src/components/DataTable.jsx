@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const DataTable = ({ data, itemsPerPage = 10 }) => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -48,7 +49,7 @@ const DataTable = ({ data, itemsPerPage = 10 }) => {
                 Tool Wear
               </th>
               <th className="px-6 py-4 text-center text-sm font-semibold text-white">
-                
+                Actions
               </th>
             </tr>
           </thead>
@@ -80,6 +81,7 @@ const DataTable = ({ data, itemsPerPage = 10 }) => {
                   {row.toolWear}
                 </td>
                 <td className="px-6 py-4 text-center">
+                  <Link to={`/details`} className="text-white hover:text-blue-400 transition-colors">
                   <button className="text-white hover:text-blue-400 transition-colors">
                     <svg
                       className="w-5 h-5"
@@ -90,6 +92,7 @@ const DataTable = ({ data, itemsPerPage = 10 }) => {
                       <path d="M8 5v14l11-7z" />
                     </svg>
                   </button>
+                  </Link>
                 </td>
               </tr>
             ))}
