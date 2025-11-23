@@ -4,6 +4,8 @@ import { Route, Routes } from 'react-router-dom'
 // Pages
 import Dashboard from './pages/Dashboard'
 import DetailPage from './pages/DetailPage'
+import Login from './pages/Login'
+import Register from './pages/Register'
 
 function App() {
 
@@ -11,6 +13,8 @@ function App() {
     <Routes>
       <Route path="/" element={<Dashboard />} />
       <Route path="/details" element={<DetailPage />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
     </Routes>
   )
 }
