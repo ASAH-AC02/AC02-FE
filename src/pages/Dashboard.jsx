@@ -2,14 +2,13 @@ import React from "react";
 import DataTable from "../components/DataTable";
 import { machineData } from "../data/machineData";
 import Logo from "../assets/logo.svg";
+import Header from "../components/Header";
 
 const Dashboard = () => {
   return (
     <div className="bg-[#0f1c2e] min-h-screen">
       <div className="">
-        <header className="p-4 flex justify-center">
-          <img src={Logo} alt="Logo" className="w-24 h-auto" />
-        </header>
+        <Header />
         <div className="bg-[#1F2B3E]/50 w-full py-2 px-8 border border-[#2A3A4E] rounded-b-lg">
           <h2 className="text-white font-semibold">Dashboard</h2>
         </div>
@@ -81,6 +80,13 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
+
+      {/* Floating Chat Button */}
+      <button className="fixed bottom-6 right-6 bg-white rounded-full p-4 shadow-2xl hover:bg-gray-100 transition-colors">
+        <svg className="w-6 h-6 text-gray-800" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
+        </svg>
+      </button>
     </div>
   );
 };
